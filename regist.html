@@ -1,17 +1,288 @@
-	<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
+
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
-		<link rel="stylesheet" type="text/css" href="css/regist.css"/>
+		<link rel="stylesheet" type="text/css" href="css/regist.css" />
 	</head>
+
 	<body>
-		22222
-		22222
-		<div id="zc-top">
-		</div>
-		<div id="zc-body">
-		</div>
-		<div id="zc-footer">
-	</body>
+
+<!-- logo区域开始 -->
+<div class="login_midlle">
+    <div class="wrap_1200">
+        <div class="logo fl"> <a href="/"> <img src="img/zc_logo.jpg" width="155" height="56"> </a> </div>
+        <div class="login_character fl">欢迎注册</div>
+    </div>
+</div>
+<!-- logo区域结束 -->
+
+<!-- 登录页面中部开始 -->
+
+<div class="login_content">
+    <input type="hidden" value="" id="hdUrlType">
+    <div class="wrap_1200 login_main_bg">
+        <!-- 登录-->
+        <div class="login fr animated" style="display: none;">
+            <div class="login_header">
+                <span>会员登录</span>
+                <b class="login_gray">没有速普账号？<a href="javascript:void(0)" id="go_reg">立即注册</a></b>
+            </div>
+            <form method="post" action="" id="LoginForm">
+                <div class="login_error_section">
+                    <div class="error_tips" id="DIVLoginMsg"><i></i><span>用户名或密码不能为空</span></div>
+                </div>
+                <div class="login_account_total">
+                    <div class="input_icon account_icon"></div>
+                    <input type="text" id="account" name="username" value="" class="login_input_size" placeholder="邮箱、手机号、账号" maxlength="50">
+                </div>
+                <div class="clear"></div>
+                <div class="login_password_total">
+                    <div class="input_icon password_icon"></div>
+                    <input type="password" id="password" name="userpassword" class="password login_input_size" placeholder="密码" maxlength="16">
+                    <i></i>
+                </div>
+                <div class="clear"></div>
+                <div class="login_password_total DIVQapTcheSection">
+                    <div class="QapTcha">
+                        <div class="Slider_tip">按住滑块拖动到最后边</div>
+                    <div class="bgSlider"><div class="Slider ui-draggable"></div></div><div class="clr"></div><div class=" TxtStatus dropError"></div><input name="MYkskbbv5jDtw#c#Md#v7DNk4b7ar7N2" id="MYkskbbv5jDtw#c#Md#v7DNk4b7ar7N2" value="WdUTgDx" type="hidden" class="qapTcha_randomPass"></div>
+                </div>
+                <div class="clear"></div>
+                <div class="login_checkbox_all">
+         <span class="login_checkbox fl">
+          <input type="checkbox" value="记住用户名" id="cbRememberUserName">&nbsp;记住用户名</span>
+        <span class="login_checkbox auto_login fl">
+         <input type="checkbox" value="自动登录" id="cbAutoLogin" checked="checked">&nbsp;自动登录</span>
+                    <span class="login_forget"> <a href="#find_password_step1" class="fancybox login_forget_pas">忘记密码了？</a></span>
+                </div>
+                <button id="btnLogin" name="btnLogin" class="btn fl login_submit"><span>登　录</span></button>
+                <div class="clear"></div>
+            </form>
+            <div class="login_relat_account">
+                <em class="account_login"><label class="fl">合作账户登录：</label>
+                    <a href="/ThirdLogin/login/type/Alipay" target="_blank"><img src="/mall/Home/View/Public/login/img/zhifubao.png"></a>
+                    <a href="/ThirdLogin/login/type/weixin" target="_blank" style="display: none;"><img src="/mall/Home/View/Public/login/img/weixin.png"></a>
+                    <a href="/ThirdLogin/login/type/Sina" target="_blank"><img src="/mall/Home/View/Public/login/img/weibo.png"></a>
+                </em>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <!--           注册               -->
+        <div class="reg fr animated" style="display: block;">
+            <div class="login_header">
+                <span>用户注册</span>
+                <b class="login_gray">已有账号？<a href="javascript:void(0)" id="go_login">立即登录</a></b>
+            </div>
+            <form id="RegisterForm" method="post" action="">
+                <div class="login_error_section">
+                    <div class="error_tips" id="DIVRegisterMsg"><i></i><span>邮箱或手机号格式不正确</span></div>
+                </div>
+                <div class="login_account_total">
+                    <div class="input_icon account_icon"></div>
+                    <input type="text" id="new_account" name="new_account" class="login_input_size" placeholder="邮箱、手机号" maxlength="50">
+                </div>
+                <div class="clear"></div>
+                <div class="login_password_total">
+                    <div class="input_icon password_icon"></div>
+                    <input type="password" id="reg_password" name="reg_password" class="password login_input_size" placeholder="6-16位字符，必须包含英文字母和数字" maxlength="16">
+                    <i></i>
+                </div>
+                <div class="clear"></div>
+                <div class="code_total login_verify_area">
+                    <div class="input_icon randomcode_icon"></div>
+                    <input type="text" id="reg_verifyCode" name="reg_verifyCode" class="code_input_size" maxlength="4" placeholder="输入验证码">
+                    <img src="/login/verifycode/id/1.html" class="verifyimg reloadverify" style="vertical-align:middle; cursor: pointer;margin-left: 15px;">
+                    <i></i>
+                </div>
+                <div class="clear"></div>
+                <div class="code_total">
+                    <div class="input_icon code_icon"></div>
+                    <input type="text" id="ver_code" name="ver_code" class="code_input_size" placeholder="输入手机验证码" maxlength="10">
+                    <input type="button" id="btn_getcode" class="btn_getcode fr" value="获取验证码" onclick="GetAuthCode(this)">
+                </div>
+                <div class="clear"></div>
+                <div class="deal">
+                    <input type="checkbox" class="deal_agree" checked="">&nbsp;&nbsp;我已阅读并同意<a href="/StaticPage/user-agreement.html" class="fancybox fancybox.iframe user_agreement a_blue">《速普商城用户协议》</a>
+                </div>
+                <button id="btnRegister" class="btn fl reg_submit"><span>注  册</span></button>
+                <div class="clear"></div>
+            </form>
+            <div class="clear"></div>
+        </div>
+
+        <!-- 邮箱重置密码-->
+        <div class="resetPwd fr" style="display: none;">
+            <div class="login_header">
+                <span>重置密码</span>
+            </div>
+            <form method="post" action="/login" id="ResetPasswordForm">
+                <div class="login_error_section">
+                    <div class="error_tips" id="DIVResetPassword">
+                        <span>密码不能为空</span>
+                    </div>
+                </div>
+                <div class="login_account_total">
+                    <div class="input_icon password_icon"></div>
+                    <input type="password" id="txtResetPassword" name="txtResetPassword" class="password resetPwd_input_size" maxlength="16" placeholder="请输入新密码">
+                </div>
+                <div class="clear"></div>
+                <div class="login_password_total">
+                    <div class="input_icon password_icon"></div>
+                    <input type="password" id="txtResetRPassword" name="txtResetRPassword" class="password resetPwd_input_size" maxlength="16" placeholder="请再次输入新密码">
+                    <i></i>
+                </div>
+                <button id="btnSubmitPassword" name="btnSubmitPassword" class="btn fl login_submit" style="margin-top: 20px;"><span>提 交</span></button>
+                <div class="clear"></div>
+            </form>
+            <div class="clear"></div>
+        </div>
+
+    </div>
+</div>
+<!-- 登录页面中部结束 -->
+<!--忘记密码弹框-->
+<!--step1-->
+<div id="find_password_step1" style="width:340px;display: none;background: #FFFFFF;">
+    <div class="login_header">
+        <span>找回密码</span>
+    </div>
+    <form action="" id="FindForm">
+        <div class="error_tips" id="DIVFindMsg"><i></i><span>邮箱或手机号码不能为空</span></div>
+        <div class="login_account_total">
+            <div class="input_icon account_icon"></div>
+            <input type="text" id="find_account" class="login_input_size" value="" placeholder="输入邮箱或手机号" maxlength="50">
+        </div>
+        <div class="clear"></div>
+        <div class="code_total login_verify_area">
+            <div class="input_icon randomcode_icon"></div>
+            <input type="text" id="find_verifyCode" name="find_verifyCode" class="code_input_size" maxlength="4" placeholder="输入验证码">
+            <img src="/login/verifycode/id/2.html" class="verifyimg reloadverify" style="vertical-align:middle; cursor: pointer;margin-left: 15px;">
+            <i></i>
+        </div>
+        <div class="clear"></div>
+        <div class="code_total">
+            <div class="input_icon code_icon"></div>
+            <input type="text" id="find_ver_code" class="code_input_size" placeholder="输入手机验证码">
+            <input type="button" id="find_btn_getcode" class="btn_getcode fr" value="获取验证码" onclick="GetResetPasswordCode(this)" maxlength="10">
+        </div>
+        <div class="clear"></div>
+        <a href="#" class="btn fl btn_style" id="btnVerify"><span>验证</span></a>
+        <div class="clear"></div>
+        <div style="width: 49%;float:left;background: #f9f9f9;text-align: center;color: #e3004a;">第一步：验证用户   √</div><div style="width: 2%;float:left;background: #f9f9f9">&gt;</div><div style="width: 49%;float:left;background: #f9f9f9;text-align: center;">第二步：修改完成   √</div>
+    </form>
+    <div class="clear"></div>
+</div>
+<!--step2-->
+<div id="find_password_step2" style="width:340px;display: none;background: #FFFFFF">
+    <div class="login_header">
+        <span>找回密码</span>
+    </div>
+    <form action="">
+        <div class="error_tips" id="DIVFindPasswordMsg"><i></i><span>新密码不符合规范</span></div>
+        <div class="login_account_total">
+            <label for="account"><div class="input_icon account_icon account_icon" style="background-color: #FFFFFF"></div></label>
+            <input type="text" id="present_account" class="login_input_size present_account" value="" style="background: #FFFFFF" readonly="">
+        </div>
+        <div class="clear"></div>
+        <div class="login_password_total" style="padding-bottom: 20px;">
+            <div class="input_icon password_icon"></div>
+            <input type="password" id="new_password" class="password login_input_size" placeholder="请输入新密码" maxlength="16">
+            <i></i>
+        </div>
+        <div class="login_password_total">
+            <div class="input_icon password_icon"></div>
+            <input type="password" id="new_password_repeat" class="password login_input_size" placeholder="请再次输入新密码" maxlength="16">
+            <i></i>
+        </div>
+        <div class="clear"></div>
+        <a href="#" class="btn fl btn_style" id="btnResetPassword"><span>完成</span></a>
+        <div class="clear"></div>
+        <div style="width: 49%;float:left;background: #f9f9f9;text-align: center;">第一步：验证用户   √</div><div style="width: 2%;float:left;background: #f9f9f9">&gt;</div><div style="color: #e3004a;width: 49%;float:left;background: #f9f9f9;text-align: center;">第二步：修改完成   √</div>
+
+    </form>
+</div>
+
+<!--footer(登陆注册与购物车共用)-->
+<div class="supuy_info_box login_foot">
+        <div class="login_coryright">Copyright © 速普商城 2010-2016 All Right Reseved 鲁 ICP 证 09059644 号 </div>
+    <div class="zizhi">
+        <!--<a href="/helper/license.html" target="_blank"><img src="/mall/Home/View/Public/Img/zhizhao.png" width="137" height="47"></a>-->
+        <script src="http://fm.p0y.cn/j/adv.js"></script><script src="http://kxlogo.knet.cn/seallogo.dll?sn=e14041537020048086xzmw000000&amp;size=0"></script><span style="display:inline-block;position:relative;width:auto;"><a href="https://ss.knet.cn/verifyseal.dll?sn=e14041537020048086xzmw000000&amp;ct=df&amp;a=1&amp;pa=0.3966233025317678" id="kx_verify" tabindex="-1" target="_blank" kx_type="图标式" style="display:inline-block;"><img src="http://rr.knet.cn/static/images/logo/cnnic.png" style="border:none;" oncontextmenu="return false;" alt="可信网站"></a></span>
+    </div>
+</div>
+<script type="text/javascript">
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-25960046-1', 'auto');
+    ga('send', 'pageview');
+
+</script>
+<!--footer结束-->
+
+<!--购物车 关闭标签，弹出优惠券注释-->
+<!--<script type="text/javascript">
+    !function(){var a=document.createElement("script");a.type="text/javascript",a.async=!0,a.src="//configch2.veinteractive.com/tags/C2EC470C/B35B/4969/942D/5ED2A3BE61B5/tag.js";var b=document.getElementsByTagName("head")[0];if(b)b.appendChild(a,b);else{var b=document.getElementsByTagName("script")[0];b.parentNode.insertBefore(a,b)}}();
+</script>-->
+<script type="text/javascript">
+    var _py = _py || [];
+    _py.push(['a', '6qs..T_UbbhbxjJ8nBjsKyNAG6_']);
+    _py.push(['domain','stats.ipinyou.com']);
+    _py.push(['e','']);
+    -function(d) {
+        var s = d.createElement('script'),
+                e = d.body.getElementsByTagName('script')[0]; e.parentNode.insertBefore(s, e),
+                f = 'https:' == location.protocol;
+        s.src = (f ? 'https' : 'http') + '://'+(f?'fm.ipinyou.com':'fm.p0y.cn')+'/j/adv.js';
+    }(document);
+</script>
+<noscript><img src="//stats.ipinyou.com/adv.gif?a=6qs..T_UbbhbxjJ8nBjsKyNAG6_&e=" style="display:none;"/></noscript>
+<script type="text/javascript">
+    $('.login_forget_pas').fancybox({
+        "padding":0,
+        'width':'20%',
+        'height':'20%'
+    });
+    $(".user_agreement").fancybox({
+        'width':'70%',
+        'height':'75%',
+        'hideOnContentClick':true,
+
+        'overlayShow': true,
+        'overlayOpacity': 0.7,
+        'showCloseButton':true,
+        'type':'iframe'
+    });
+
+</script>
+
+<div id="DIVShadeMain" style="display: none;">
+    <div id="DIVShade" style="width:170px;
+             position: absolute; top: 0px; filter: alpha(opacity=60); background-color: #777;
+                z-index: 10002; left: 0px;
+                opacity:0.5; -moz-opacity:0.5;width: 100%;">
+    </div>
+    <div style="position:fixed;
+      top:30%;
+      left:42%;
+      width:300px;
+      height:30px;
+      padding:16px;
+      border:0;
+      background-color:white;
+      opacity: 0;
+      z-index:10003;
+      box-shadow: 0px 0px 10px #333;
+      overflow:auto;display: block;" id="DIVMessage">
+        <img src="/mall/Home/View/Public/Img/loading.gif" height="20px" width="20px" style="vertical-align: middle;">
+        <span id="SPANMessageSection" style="font-size: 15px;margin-left: 5px;line-height: 30px;"></span>
+    </div>
+</div>
+
+</body>
+
 </html>

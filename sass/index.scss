@@ -277,6 +277,136 @@ html{
 .navCon-cate-title a {
     color: #ffffff;
 }
+#banner_tabs .flex-direction-nav .flex-prev {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    margin: -30px 0 0 -386px;
+    left: 50%;
+    z-index: 1;
+    width: 40px;
+    height: 60px;
+    background: url(../Img/slider-arrow.png) -126px -137px #000 no-repeat;
+    cursor: pointer;
+    filter: alpha(opacity=0);
+    opacity: 0;
+}
+#banner_tabs .flex-direction-nav .flex-next {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    margin: -30px 0 0 366px;
+    left: 50%;
+    z-index: 1;
+    width: 40px;
+    height: 60px;
+    background: url(../Img/slider-arrow.png) -6px -137px #000 no-repeat;
+    cursor: pointer;
+    filter: alpha(opacity=0);
+    opacity: 0;
+}
+#banner_tabs .flex-control-nav {
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+}
+.wrap_1200 {
+    width: 1200px;
+    margin: 0 auto;
+}
+.home_title {
+    padding: 10px 15px;
+    line-height: 32px;
+    overflow: hidden;
+}
+#tsale {
+    margin-top: 30px;
+}
+#tsale .home_t_intro {
+    background-position: -100px 5px;
+}
+
+.home_t_intro {
+    padding-left: 39px;
+    height: 32px;
+    font-size: 24px;
+}
+.home_t_intro {
+    padding-left: 39px;
+    height: 32px;
+    font-size: 24px;
+}
+element.style {
+    margin-left: 20px;
+    color: #999999;
+    font-size: 14px;
+}
+.fr {
+    float: right;
+}
+.clear {
+    _zoom: 1;
+    clear: both;
+}
+.clear:after {
+    content: '\0020';
+    display: block;
+    clear: both;
+    height: 0;
+}
+.home_floor {
+    padding: 10px 0;
+}
+.snapUp {
+    width: 1200px;
+    height: 80px;
+    margin: 0 auto;
+}
+.time-bar {
+    width: 100%;
+    height: 53px;
+    background: url(/mall/Home/View/Public/Img/dengd.png) no-repeat;
+    position: relative;
+}
+.clock-con{
+    position: absolute;
+    top:22px;
+    color:#fff;
+    left:30px;
+    font-size:16px;
+}
+.time-bar ul {
+    position: absolute;
+    top: 22px;
+    left: 580px;
+}
+.state {
+    position: absolute;
+    top: -21px;
+    left: 8px;
+    opacity: 0;
+}
+.time-list {
+    width: 90px;
+    height: 26px;
+    line-height: 28px;
+    text-align: center;
+    color: #fff;
+    background: #ccc;
+    border-radius: 14px;
+    font-size: 18px;
+}
+.time-bar ul li{
+    float:left;
+    position: relative;
+    width:90px;
+    margin:0 50px;
+    cursor: pointer;
+}
+
 
 
     
