@@ -1,0 +1,104 @@
+*{margin:0;padding:0;font-family:"微软雅黑";}
+a{color:#313332;text-decoration:none;}
+ul,li,dl,dd,dt{list-style:none;}
+img{border:0;display:block;}
+html, body {
+    color: #666;
+    background: #FFF;
+    font-family: "Microsoft YaHei UI", "Microsoft YaHei UI Light", "微软雅黑", "宋体", Helvetica-Black-SemiBold, Tahoma, Arial, sans-serif;
+    font-size: 12px;
+    line-height: 24px;
+}
+img{
+    display: block;
+}
+.top {
+    background-color: #333333;
+    padding: 2px 0;
+    color: #dbdbdb;
+    height: 29px;
+}
+.wrap_1200 {
+    width: 1200px;
+    margin: 0 auto;
+}
+.fl {
+    float: left;
+}
+.login_box a {
+    color: #e5004a;
+}
+.top_nav{
+    width:450px;
+    height: 25px;
+    float: right;
+}
+.li_box{
+    width:85px;
+    height: 25px;
+    float: left;
+}
+.li_box a{
+    color: #fff;
+}
+.top_nav_menu {
+    display: block;
+    border-top: 1px solid #333;
+    border-right: 1px solid #333;
+    border-left: 1px solid #333;
+    position: relative;
+    text-align: center;
+    background: #333;
+    z-index: 100;
+    min-width: 80px;
+}
+.li_box {
+    float: left;
+    min-width: 80px;
+    text-align: center;
+    position: relative;
+    z-index: 10000;
+}
+.li_box a span {
+    background-position: -14px 0;
+    width: 7px;
+    height: 6px;
+    display: inline-block;
+    margin-left: 6px;
+    margin-top: -10px;
+}
+.user_con {
+    position: absolute;
+    top: 25px;
+    background-color: #333;
+    z-index: 2;
+    padding: 10px;
+    border-right: 1px solid #333;
+    border-bottom: 1px solid #333;
+    border-left: 1px solid #333;
+    display: none;
+    left: 0px;
+}
+.user_con ul li {
+    width: 60px;
+    margin: 5px 0px;
+}
+.user_con {
+    position: absolute;
+    top: 25px;
+    background-color: #333;
+    z-index: 2;
+    padding: 10px;
+    border-right: 1px solid #333;
+    border-bottom: 1px solid #333;
+    border-left: 1px solid #333;
+    display: none;
+    left: 0px;
+}
+.user_con :hover{
+    display: block;
+}
+.midlle {
+    padding: 35px 0 18px;
+    background-color: white;
+}

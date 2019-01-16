@@ -1,0 +1,344 @@
+*{margin:0;padding:0;font-family:"微软雅黑";}
+a{color:#313332;text-decoration:none;}
+ul,li,dl,dd,dt{list-style:none;}
+img{border:0;display:block;}
+html, body {
+    color: #666;
+    background: #FFF;
+    font-family: "Microsoft YaHei UI", "Microsoft YaHei UI Light", "微软雅黑", "宋体", Helvetica-Black-SemiBold, Tahoma, Arial, sans-serif;
+    font-size: 12px;
+    line-height: 24px;
+}
+.login_midlle {
+    padding: 20px 0px;
+    background: #f2f2f2;
+}
+.login_content {
+    width: 100%;
+    background-color: #e5004b;
+    background: url(../img/login-bg.jpg) center center;
+    overflow: hidden;
+    height: 480px;
+    border-bottom: 1px solid #dbdbdb;
+}
+.login_main_bg {
+    padding: 46px 0;
+    position: relative;
+}
+.wrap_1200 {
+    width: 1200px;
+    margin: 0 auto;
+}
+div.login {
+    margin-right: 45px;
+    width: 340px;
+    height: 390px;
+    background: #ffffff;
+    /* padding: 25px 21px 18px 23px; */
+    border: 1px solid #dbdbdb;
+}
+div.login_header {
+    margin: 25px 22px 5px 22px;
+    background: #FFFFFF;
+}
+div.login_header span {
+    font-size: 18px;
+    color: #686565;
+    font-weight: 700;
+}
+div.login_header b {
+    color: #999999;
+}
+b.login_gray a {
+    /* padding-left: 8px; */
+    color: #137ce9;
+}
+.login_error_section {
+    height: 22px;
+    line-height: 22px;
+}
+div.error_tips {
+    margin: 0 22px 0 22px;
+    color: #e5004b;
+    line-height: 12px;
+    display: none;
+}
+div.error_tips i {
+    width: 22px;
+    height: 20px;
+    display: inline-block;
+    background: url(../img/login_icon.png) no-repeat;
+    background-position: 0px -240px;
+    position: relative;
+    top: 2px;
+    left: 0;
+}
+div.error_tips {
+    margin: 0 22px 0 22px;
+    color: #e5004b;
+    line-height: 12px;
+    display: none;
+}
+div.login_account_total {
+    margin: 10px 22px 0 22px;
+    position: relative;
+}
+div.input_icon {
+    padding: 8px 20px;
+    height: 22px;
+    font-size: 14px;
+    font-weight: 400;
+    display: inline-block;
+    line-height: 1;
+    color: #555;
+    text-align: center;
+    background-color: #f9f9f9;
+    white-space: nowrap;
+    vertical-align: middle;
+    float: left;
+    position: absolute;
+    left: 2px;
+    top: 2px;
+}
+input.login_input_size {
+    display: block;
+    width: 231px;
+    height: 40px;
+    border: 1px solid #FFFFFF;
+    background: #f9f9f9;
+    padding: 0 20px 0 43px;
+    line-height: 40px;
+    float: left;
+    font-size: 13px;
+    color: #666;
+}
+div.login_password_total {
+    margin: 10px 22px 0 22px;
+    position: relative;
+}
+div.input_icon {
+    padding: 8px 20px;
+    height: 22px;
+    font-size: 14px;
+    font-weight: 400;
+    display: inline-block;
+    line-height: 1;
+    color: #555;
+    text-align: center;
+    background-color: #f9f9f9;
+    white-space: nowrap;
+    vertical-align: middle;
+    float: left;
+    position: absolute;
+    left: 2px;
+    top: 2px;
+}
+.QapTcha {
+    float: left;
+    width: 288px;
+    position: relative;
+}
+.QapTcha .Slider_tip {
+    position: absolute;
+    top: 0;
+    left: 95px;
+    font-size: 14px;
+    color: #FFFFFF;
+    line-height: 40px;
+}
+.QapTcha .bgSlider {
+    width: 291px;
+    height: 34px;
+    float: left;
+    background-color: #f29dba;
+    padding: 3px;
+}
+.QapTcha .Slider {
+    width: 52px;
+    height: 34px;
+    background: transparent url(../../Img/qaptcha/bg_draggable_qaptcha_1.png) no-repeat;
+    cursor: pointer;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.QapTcha .TxtStatus {
+    width: 252px;
+    margin-top: 7px;
+    text-align: left;
+    color: #bb2828;
+    font-family: Verdana;
+    font-size: 10px;
+    clear: both;
+}
+div.login_checkbox_all {
+    margin: 10px 24px 10px 24px;
+    line-height: 22px;
+    height: 22px;
+}
+span.login_checkbox {
+    color: #777777;
+}
+span.auto_login {
+    margin-left: 30px;
+}
+a.login_forget_pas {
+    color: #9F9F9F;
+    font-weight: normal;
+}
+.login_submit {
+    display: block;
+    width: 295px;
+    background: #e5004b;
+    border: none;
+    cursor: pointer;
+    margin: 0 22px 0 22px;
+}
+.login_submit span {
+    color: #FFF;
+    line-height: 36px;
+    font-size: 20px;
+}
+div.login_relat_account {
+    /* margin-top: 98px; */
+    margin: 15px 22px 15px 22px;
+}
+em.account_login {
+    font-style: normal;
+    color: #777777;
+}
+.fl {
+    float: left;
+}
+em.account_login a {
+    display: block;
+    float: left;
+    margin-left: 10px;
+    line-height: 30px;
+    color: #137ce9;
+}
+.reg {
+    background: #fff;
+    width: 340px;
+    height: 390px;
+    position: absolute;
+    top: 46px;
+    right: 46px;
+    border: 1px solid #dbdbdb;
+    display: none;
+}
+div.login_header {
+    margin: 25px 22px 5px 22px;
+    background: #FFFFFF;
+}
+div.login_header span {
+    font-size: 18px;
+    color: #686565;
+    font-weight: 700;
+}
+div.login_header b {
+    color: #999999;
+}
+
+b.login_gray {
+    color: #777777;
+    font-size: 12px;
+    font-weight: normal;
+    float: right;
+}
+b.login_gray a {
+    /* padding-left: 8px; */
+    color: #137ce9;
+}
+.login_error_section {
+    height: 22px;
+    line-height: 22px;
+}
+div.error_tips {
+    margin: 0 22px 0 22px;
+    color: #e5004b;
+    line-height: 12px;
+    display: none;
+}
+div.login_account_total {
+    margin: 10px 22px 0 22px;
+    position: relative;
+}
+.reg_submit {
+    display: block;
+    width: 295px;
+    background: #e5004b;
+    border: none;
+    margin: 0 22px 0 22px;
+    cursor: pointer;
+}
+.deal {
+    margin: 10px 30px 10px 30px;
+    line-height: 12px;
+}
+.reg_submit span {
+    color: #FFF;
+    line-height: 36px;
+    font-size: 20px;
+}
+div.resetPwd {
+    margin-right: 45px;
+    width: 340px;
+    height: 390px;
+    background: #ffffff;
+    /* padding: 25px 21px 18px 23px; */
+    border: 1px solid #dbdbdb;
+}
+div.login_header {
+    margin: 25px 22px 5px 22px;
+    background: #FFFFFF;
+}
+div.login_header span {
+    font-size: 18px;
+    color: #686565;
+    font-weight: 700;
+}
+div.error_tips {
+    margin: 0 22px 0 22px;
+    color: #e5004b;
+    line-height: 12px;
+    display: none;
+}
+.btn_style {
+    display: block;
+    width: 275px;
+    height: 36px;
+    background: #e5004b;
+    margin: 30px 22px 30px 22px;
+}
+.btn {
+    display: block;
+    padding: 4px 10px;
+    text-align: center;
+}
+div.login_foot {
+    background: #F3F3F3;
+}
+div.login_coryright {
+    padding-top: 15px;
+    padding-bottom: 26px;
+    color: #9C9C9C;
+}
+.supuy_info_box {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
