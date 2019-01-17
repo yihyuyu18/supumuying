@@ -226,34 +226,7 @@ element.style {
     margin: 10px 22px 0 22px;
     position: relative;
 }
-div.input_icon {
-    padding: 8px 20px;
-    height: 22px;
-    font-size: 14px;
-    font-weight: 400;
-    display: inline-block;
-    line-height: 1;
-    color: #555;
-    text-align: center;
-    background-color: #f9f9f9;
-    white-space: nowrap;
-    vertical-align: middle;
-    float: left;
-    position: absolute;
-    left: 2px;
-    top: 2px;
-}
-.code_input_size {
-    display: block;
-    width: 112px;
-    height: 40px;
-    border: 1px solid #FFFFFF;
-    padding: 0 20px 0 43px;
-    float: left;
-    color: #666;
-    line-height: 40px;
-    background: #f9f9f9;
-}
+
 .btn_getcode {
     padding: 12px 22px;
     border: none;
@@ -355,23 +328,6 @@ div.login_password_total {
     margin: 10px 22px 0 22px;
     position: relative;
 }
-div.input_icon {
-    padding: 8px 20px;
-    height: 22px;
-    font-size: 14px;
-    font-weight: 400;
-    display: inline-block;
-    line-height: 1;
-    color: #555;
-    text-align: center;
-    background-color: #f9f9f9;
-    white-space: nowrap;
-    vertical-align: middle;
-    float: left;
-    position: absolute;
-    left: 2px;
-    top: 2px;
-}
 input.resetPwd_input_size {
     display: block;
     width: 231px;
@@ -446,23 +402,6 @@ div.login_account_total {
     margin: 10px 22px 0 22px;
     position: relative;
 }
-div.input_icon {
-    padding: 8px 20px;
-    height: 22px;
-    font-size: 14px;
-    font-weight: 400;
-    display: inline-block;
-    line-height: 1;
-    color: #555;
-    text-align: center;
-    background-color: #f9f9f9;
-    white-space: nowrap;
-    vertical-align: middle;
-    float: left;
-    position: absolute;
-    left: 2px;
-    top: 2px;
-}
 input.login_input_size {
     display: block;
     width: 231px;
@@ -482,23 +421,6 @@ input.login_input_size {
 .code_total {
     margin: 10px 22px 0 22px;
     position: relative;
-}
-div.input_icon {
-    padding: 8px 20px;
-    height: 22px;
-    font-size: 14px;
-    font-weight: 400;
-    display: inline-block;
-    line-height: 1;
-    color: #555;
-    text-align: center;
-    background-color: #f9f9f9;
-    white-space: nowrap;
-    vertical-align: middle;
-    float: left;
-    position: absolute;
-    left: 2px;
-    top: 2px;
 }
 .code_input_size {
     display: block;
@@ -573,7 +495,25 @@ a {
     color: #666;
     text-decoration: none;
 }
-
-
+.footer_nav_ul {
+    border-right: 1px solid #444;
+    width: 170px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+.supuy_info_box {
+    text-align: center;
+    padding-bottom: 10px;
+    background: #333333;
+}
+.supuy_info {
+    width: 280px;
+    margin: 0 auto;
+    padding: 10px 0px;
+}
+.supuy_info ul li {
+    float: left;
+}
 
 

@@ -34,7 +34,6 @@ div.login {
     width: 340px;
     height: 390px;
     background: #ffffff;
-    /* padding: 25px 21px 18px 23px; */
     border: 1px solid #dbdbdb;
 }
 div.login_header {
@@ -315,6 +314,7 @@ div.error_tips {
     display: block;
     padding: 4px 10px;
     text-align: center;
+    margin-bottom: 20px;
 }
 div.login_foot {
     background: #F3F3F3;
@@ -328,8 +328,42 @@ div.login_coryright {
     text-align: center;
     margin-bottom: 10px;
 }
-
-
+#IMG{
+    width:24px;
+    height: 24px;
+}
+.login_midlle {
+    padding: 20px 0px;
+    background: #f2f2f2;
+    height: 60px;
+}
+div.login_character {
+    width: 140px;
+    height: 53px;
+    padding-left: 30px;
+    margin-top: 10px;
+    margin-left: 35px;
+    font-size: 28px;
+    line-height: 50px;
+    color: #333333;
+    border-left: 1px solid #dbdbdb;
+}
+.fr {
+    float: right;
+}
+input.login_input_size {
+    display: block;
+    width: 231px;
+    height: 40px;
+    border: 1px solid #FFFFFF;
+    background: #f9f9f9;
+    padding: 0 20px 0 43px;
+    line-height: 40px;
+    float: left;
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 10px;
+}
 
 
 
