@@ -5,13 +5,11 @@
 		<title></title>
 		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/detail.js" type="text/javascript" charset="utf-8"></script>
-		<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"
 		<link rel="stylesheet" type="text/css" href="css/detail.css"/>
-		
 	</head>
 	<body>
 		<div id="header">
-    <div class="top">
+    	<div class="top">
         <div class="wrap_1200">
             <div class="login_box fl">
                 欢迎来到速普商城！ 请
@@ -41,11 +39,11 @@
                         <ul>
                             <li>
                                 <a href="/Apps/index" target="_blank">
-                                    <img src="/mall/Home/View/Public/Img/app.jpg" width="120" height="120" alt="APP二维码"> </a>
+                                    <img src="img/weixin.jpg" width="120" height="120" alt="APP二维码"> </a>
                             </li>
                             <li>
                                 <a href="javascript:void(0)">
-                                    <img src="/mall/Home/View/Public/Img/weixin.jpg" width="120" height="120" alt="微信二维码"> </a>
+                                    <img src="Img/weixin.jpg" width="120" height="120" alt="微信二维码"> </a>
                             </li>
                         </ul>
                     </div>
@@ -56,15 +54,6 @@
                 <div class="li_box" id="supuy_service">
                     <div class="top_nav_menu"> <a href="javascript:void(0)">400-618-0055<span></span></a> </div>
                     <div id="service_con" class="service_con">
-                        <ul>
-                            <!--<li><a href="javascript:void(0)" onclick="javascript:window.open('http://crm2.qq.com/page/portalpage/wpa.php?uin=4006180055&f=1&ty=1&aty=0&a=&from=6','','height=400,width=600,top=200,left=300,toolbar=no,menubar=no,scrollbars=no, resizable=no,location=no, status=no')">
-                                在线客服
-                            </a>
-                            </li>
-                            <li><a href="http://120.27.92.34/autoans/robot" target="_blank">智能客服机器人</a></li>-->
-                            <li><a href="http://www.supumall.com/Helper/helpShopping" target="_blank">帮助中心</a> </li>
-                            <li><a href="javascript:void(0)" style="font-weight:bold;">400-618-0055</a> </li>
-                        </ul>
                     </div>
                 </div>
             </div>
@@ -74,7 +63,7 @@
         <div class="wrap_1200">
             <div class="logo fl">
                 <a href="/">
-                    <img src="/mall/Home/View/Public/Img/logo.jpg" width="210" alt="速普母婴商城LOGO" title="速普母婴商城LOGO">
+                    <img src="Img/logo.jpg" width="210" alt="速普母婴商城LOGO" title="速普母婴商城LOGO">
                     <h1 style="display: none;">速普商城</h1>
                 </a>
             </div>
@@ -630,6 +619,327 @@
                 </div>
                 <div class="clear"></div>
             </div>
+        </div>
+    </div>
+</div>
+
+	<div class="warp_1200">
+	<div class="breadcrumbs">
+    <a href="/">首页</a> &gt;
+    荷兰牛栏            <a href="javascript:void(0)" id="t_list"></a>
+</div>
+    <div class="main_left">
+        <div class="category">
+            <input type="hidden" id="category_type" category_id="">
+            <input type="hidden" id="searchkey_type" searchkey_id="荷兰牛栏">
+            <div class="category_name">
+                    <span>
+                        <div>婴儿奶粉</div>
+                    </span>
+                </div>
+                <div class="category_list" style="margin-top: 3px;">
+                    <ul>
+                        <li><a href="javascript:void(0)" category_pid="1061" searchkey="荷兰牛栏">1段</a></li><li><a href="javascript:void(0)" category_pid="1063" searchkey="荷兰牛栏">3段</a></li><li><a href="javascript:void(0)" category_pid="1064" searchkey="荷兰牛栏">4段</a></li>                                                </ul>
+                </div>        </div>
+    </div>
+    <div class="main_right">
+            <div class="choose_box">
+                <div class="choose_box_top">
+                                        <div class="selected_libox">
+                        <div class="choose_label ellipsis fl yixuan" style="display: none;">
+                            已选条件
+                        </div>
+                    <div class="selected_tagbox fl" id="div_select_tagbox">
+                        <ul>
+                            <li id="reset" parm_title="" parm_value="" style="display: none;"><a href="javascript:void(0)" class="choose_reset">全部撤销</a></li>
+                        </ul>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+
+                    <div class="choose_ulbox">
+                        <div class="choose_libox">
+                                <div class="choose_label ellipsis fl">商品品牌</div>
+                                <div class="choose_tagbox fl" id="choose_brand">
+                                    <a href="javascript:void(0)" attributeid="brand" onclick="click_brand(this)">荷兰牛栏Nutrilon</a>                                </div>
+                                <!--<a href="javascript:void(0)" class="choose_moretag"><span class="fl">更多</span><i></i></a>-->
+                                <div class="clear"></div>
+                            </div>                        <div id="goodsDynamicAttribute">
+                                                    </div>
+                    </div>
+    </div>
+    <input type="hidden" id="brandname" attrbrand="">
+    <div class="clear"></div>
+</div>
+
+    <div class="choose_box_bottom">
+        <div class="fl">
+            <div class="choose_title">排序：</div>
+            <div class="choose_item" style="width:200px;">
+                <input type="hidden" id="sort_type" sort_order="0">
+                <a href="javascript:void(0)" class="btn choose_b_btn fl" id="sor_count" onclick="SortSaleCounts(this)">销量&nbsp;↓</a>
+                <a href="javascript:void(0)" class="btn choose_b_btn fl" id="sor_price" onclick="SortPrices(this)">价格&nbsp;↓</a>
+                <a href="javascript:void(0)" class="btn choose_b_btn fl" id="sor_discount" onclick="SortDiscounts(this)">好评&nbsp;↓</a>
+                <div class="clear"></div>
+            </div>
+
+        </div>
+        <div class="fr">
+            <div class="fl" style="margin-right: 20px;">
+                此类商品共&nbsp;<span style="color: #dc514e;font-weight: bold;" id="goodsCount">3</span>&nbsp;个
+            </div>
+
+        </div>
+        <div class="clear"></div>
+
+    </div>
+    <div class="t_tip">
+
+    </div>
+    <div class="goods_content">
+    <ul id="ul_content">
+                        <li>
+                    <div class="ac_list fl" style="padding-top: 40px; border: 3px solid rgb(255, 255, 255);">
+                        <div class="list_good_img">
+                            <a href="/Goods/goodsinfo/goodsCode/1063240032" target="_blank">
+                                <img src="http://img30.supumall.com/img/15107289823224676.jpg!200" width="200" height="200" alt="Nutrilon牛栏 荷兰奶粉3段800g" title="Nutrilon牛栏 荷兰奶粉3段800g">
+                                <i class="ltag_1"></i>
+                                <b class="rtag_qs"><span>2件</span>起售</b>                            </a>
+                        </div>
+                        <div style="height: 20px;width: 100%;"></div>
+                        <div class="list_good_des ellipsis">
+                            <a href="/Goods/goodsinfo/goodsCode/1063240032" title="Nutrilon牛栏 荷兰奶粉3段800g" target="_blank">
+                                                                                                            <span style="color: #e5004b;"></span>                                Nutrilon牛栏 荷兰奶粉3段800g                            </a>
+                        </div>
+                        <div class="list_good_price">
+                            <div class="list_good_price_new list fl">
+                                ￥<span>155.18</span>
+                            </div>
+                            <div class="list_good_prcie_old fl" style="margin-top: 0px;">
+                                    ￥179                             </div>
+
+                                                            <div class="fr" style="color:#E5004B;">
+                                                                    </div>                            <div class="clear"></div>
+                        </div>
+                        <div class="list_good_addbox">
+                            <div class="list_good_sumbox fl">
+                                <input type="text" name="" value="2" mincout="1" minstart="2" class="list_good_num ellipsis fl">
+                                <a href="javascript:void(0)" class="list_good_upnum fr ">
+                                    +
+                                </a>
+                                <a href="javascript:void(0)" class="list_good_downnum fr">
+                                    -
+                                </a>
+                            </div>
+                            <input type="hidden" class="cartid" value="1063240032">
+                            <input type="hidden" class="goodsid" value="46119">
+                            <input type="hidden" class="groupid" value="">
+                            <input type="hidden" class="keybuy" value="">
+                                                                <a href="javascript:void(0)" class="btn list_good_addcart fl addcar" style="background: rgb(246, 246, 246); color: rgb(51, 51, 51);"><span class="fl">加入购物车</span></a>                                                            <a href="javascript:void(0)" class="list_good_addfav fl myfav_46119" onclick="add_fav(46119)">收藏</a>                        </div>
+                    </div>
+                </li>                <li>
+                    <div class="ac_list fl" style="padding-top: 40px; border: 3px solid rgb(255, 255, 255);">
+                        <div class="list_good_img">
+                            <a href="/Goods/goodsinfo/goodsCode/1064240033" target="_blank">
+                                <img src="http://img30.supumall.com/img/15107292093225983.jpg!200" width="200" height="200" alt="Nutrilon牛栏 荷兰奶粉4段800g" title="Nutrilon牛栏 荷兰奶粉4段800g">
+                                <i class="ltag_1"></i>
+                                <b class="rtag_qs"><span>2件</span>起售</b>                            </a>
+                        </div>
+                        <div style="height: 20px;width: 100%;"></div>
+                        <div class="list_good_des ellipsis">
+                            <a href="/Goods/goodsinfo/goodsCode/1064240033" title="Nutrilon牛栏 荷兰奶粉4段800g" target="_blank">
+                                                                                                            <span style="color: #e5004b;"></span>                                Nutrilon牛栏 荷兰奶粉4段800g                            </a>
+                        </div>
+                        <div class="list_good_price">
+                            <div class="list_good_price_new list fl">
+                                ￥<span>134</span>
+                            </div>
+                            <div class="list_good_prcie_old fl" style="margin-top: 0px;">
+                                    ￥179                             </div>
+
+                                                            <div class="fr" style="color:#E5004B;">
+                                                                    </div>                            <div class="clear"></div>
+                        </div>
+                        <div class="list_good_addbox">
+                            <div class="list_good_sumbox fl">
+                                <input type="text" name="" value="2" mincout="1" minstart="2" class="list_good_num ellipsis fl">
+                                <a href="javascript:void(0)" class="list_good_upnum fr ">
+                                    +
+                                </a>
+                                <a href="javascript:void(0)" class="list_good_downnum fr">
+                                    -
+                                </a>
+                            </div>
+                            <input type="hidden" class="cartid" value="1064240033">
+                            <input type="hidden" class="goodsid" value="46121">
+                            <input type="hidden" class="groupid" value="">
+                            <input type="hidden" class="keybuy" value="">
+                                                                <a href="javascript:void(0)" class="btn list_good_addcart fl addcar" style="background: rgb(246, 246, 246); color: rgb(51, 51, 51);"><span class="fl">加入购物车</span></a>                                                            <a href="javascript:void(0)" class="list_good_addfav fl myfav_46121" onclick="add_fav(46121)">收藏</a>                        </div>
+                    </div>
+                </li>                <li>
+                    <div class="ac_list fl" style="padding-top: 40px; border: 3px solid rgb(255, 255, 255);">
+                        <div class="list_good_img">
+                            <a href="/Goods/goodsinfo/goodsCode/1061240030" target="_blank">
+                                <img src="http://img30.supumall.com/img/15107279903228527.jpg!200" width="200" height="200" alt="Nutrilon牛栏 荷兰奶粉1段850g" title="Nutrilon牛栏 荷兰奶粉1段850g">
+                                <i class="ltag_1"></i>
+                                <b class="rtag_qs"><span>2件</span>起售</b>                            </a>
+                        </div>
+                        <div style="height: 20px;width: 100%;"></div>
+                        <div class="list_good_des ellipsis">
+                            <a href="/Goods/goodsinfo/goodsCode/1061240030" title="Nutrilon牛栏 荷兰奶粉1段850g" target="_blank">
+                                                                                                            <span style="color: #e5004b;"></span>                                Nutrilon牛栏 荷兰奶粉1段850g                            </a>
+                        </div>
+                        <div class="list_good_price">
+                            <div class="list_good_price_new list fl">
+                                ￥<span>159</span>
+                            </div>
+                            <div class="list_good_prcie_old fl" style="margin-top: 0px;">
+                                    ￥199                             </div>
+
+                                                            <div class="fr" style="color:#E5004B;">
+                                                                    </div>                            <div class="clear"></div>
+                        </div>
+                        <div class="list_good_addbox">
+                            <div class="list_good_sumbox fl">
+                                <input type="text" name="" value="2" mincout="1" minstart="2" class="list_good_num ellipsis fl">
+                                <a href="javascript:void(0)" class="list_good_upnum fr ">
+                                    +
+                                </a>
+                                <a href="javascript:void(0)" class="list_good_downnum fr">
+                                    -
+                                </a>
+                            </div>
+                            <input type="hidden" class="cartid" value="1061240030">
+                            <input type="hidden" class="goodsid" value="46115">
+                            <input type="hidden" class="groupid" value="">
+                            <input type="hidden" class="keybuy" value="">
+                                                                <a href="javascript:void(0)" class="btn list_good_addcart fl addcar" style="background: rgb(246, 246, 246); color: rgb(51, 51, 51);"><span class="fl">加入购物车</span></a>                                                            <a href="javascript:void(0)" class="list_good_addfav fl myfav_46115" onclick="add_fav(46115)">收藏</a>                        </div>
+                    </div>
+                </li>    </ul></div>
+    
+
+    </div>
+<!--侧边浮动条-->
+<div class="nav_right" style="height: 447px;">
+    <ul>
+        <li><a href="/User/index.html" target="_blank"><i class="lnr lnr-user"></i><span style="left: 60px;">&nbsp;&nbsp;我的速普&nbsp;&nbsp;</span></a></li>
+        <li><a href="/User/index/urltype/favorate#6" target="_blank"><i class="lnr lnr-heart"></i><span style="left: 60px;">&nbsp;&nbsp;我的收藏&nbsp;&nbsp;</span></a></li>
+        <!--<li><a href="#" target="_blank" id="online-service"><i class="lnr lnr-smile"></i><span>&nbsp;&nbsp;在线客服&nbsp;&nbsp;</span></a></li>-->
+        <li id="end"><a href="/cart/index/urltype/cart.html" target="_blank"><i class="lnr lnr-cart"></i><span style="left: 60px;">&nbsp;&nbsp;购物车&nbsp;&nbsp;</span></a><div class="cart_count">0</div></li>
+        <!--<li><a href="javascript:void(0)" onclick="javascript:window.open('http://crm2.qq.com/page/portalpage/wpa.php?uin=4006180055&f=1&ty=1&aty=0&a=&from=6','','height=400,width=600,top=200,left=300,toolbar=no,menubar=no,scrollbars=no, resizable=no,location=no, status=no')"><i class="lnr lnr-smile"></i><span>&nbsp;&nbsp;在线客服&nbsp;&nbsp;</span></a></li>-->
+        <li class="scroll_top"><i class="lnr lnr-chevron-up-circle"></i><span style="left: 60px;">&nbsp;&nbsp;返回顶部&nbsp;&nbsp;</span></li>
+    </ul>
+</div>
+<div class="clear"></div>
+    <div class="pagination-pages fr"></div>
+<div class="clear"></div>
+</div>
+<div id="footer">
+    <div class="supuy_cultrue">
+        <div class="wrap_1200">
+            <div class="cultrue_img fl">
+                <img src="img/123.png">
+            </div>
+            <div class="cultrue_img fl">
+                <img src="img/123.png">
+            </div>
+            <div class="cultrue_img fl">
+                <img src="img/123.png">
+            </div>
+            <div class="cultrue_img fl">
+                <img src="img/123.png">
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer_nav">
+        <div class="wrap_1200">
+            <div class="footer_nav_ul fl">
+                <div class="footer_nav_ul_t">
+                    <h3>新手指南</h3>
+                </div>
+                <ul>
+                    <li><a href="http://www.supumall.com/Helper/helpShopping" target="_blank">购物流程</a> </li>
+                    <li><a href="http://www.supumall.com/Helper/helpMembersShow" target="_blank">会员介绍</a> </li>
+                    <li><a href="http://www.supumall.com/Helper/helpIntegral" target="_blank">积分制度</a> </li>
+                </ul>
+            </div>
+            <div class="footer_nav_ul fl">
+                <div class="footer_nav_ul_t">
+                    <h3>物流配送</h3>
+                </div>
+                <ul>
+                    <li><a href="http://www.supumall.com/Helper/help_deliveryS" target="_blank">配送服务</a> </li>
+                    <li><a href="http://www.supumall.com/Helper/help_deliveryA" target="_blank">验货签收</a> </li>
+                    <li><a href="http://www.supumall.com/Helper/helpSupuCourier" target="_blank">速普快递</a> </li>
+                </ul>
+            </div>
+            <div class="footer_nav_ul fl">
+                <div class="footer_nav_ul_t">
+                    <h3>支付方式</h3>
+                </div>
+                <ul>
+                    <li><a href="http://www.supumall.com/Helper/helpPayDelivery" target="_blank">货到付款</a></li>
+                    <li><a href="http://www.supumall.com/Helper/helpOnlinePay" target="_blank">在线支付</a></li>
+                    <li><a href="http://www.supumall.com/Helper/helpCashPay" target="_blank">现金账户</a></li>
+                </ul>
+            </div>
+            <div class="footer_nav_ul fl">
+                <div class="footer_nav_ul_t">
+                    <h3>售后服务</h3>
+                </div>
+                <ul>
+                    <li><a href="http://www.supumall.com/Helper/helpServiceC" target="_blank">赔偿承诺</a></li>
+                    <li><a href="http://www.supumall.com/Helper/helpInvoice" target="_blank">发票制度</a></li>
+                    <li><a href="http://www.supumall.com/Helper/helpReturnPolicy" target="_blank">退货政策</a></li>
+                </ul>
+            </div>
+            <div class="footer_nav_ul fl">
+                <div class="footer_nav_ul_t">
+                    <h3>常见问题</h3>
+                </div>
+                <ul>
+                    <li><a href="http://www.supumall.com/Helper/helpQuestionBuy" target="_blank">购物问题</a></li>
+                    <!-- <li><a href="http://www.supumall.com/Helper/helpQuestionImported" target="_blank">保税区海淘</a></li> -->
+                    <li><a href="http://www.supumall.com/Helper/helpQuestionSafe" target="_blank">账户安全</a></li>
+                </ul>
+            </div>
+            <div class="footer_nav_ul fl">
+                <div class="footer_nav_ul_t">
+                    <h3>联系我们</h3>
+                </div>
+                <ul>
+                    <li><a href="http://www.supumall.com/Helper/helpContactUs" target="_blank">联系客服</a></li>
+                    <li><a href="http://www.supumall.com/Helper/helpContactUs" target="_blank">意见反馈</a></li>
+                    <li><a href="http://weibo.com/supuy" target="_blank">新浪微博</a></li>
+                </ul>
+            </div>
+            <div class="footer_nav_ul fl" style="border: none;">
+                <img src="/mall/Home/View/Public/Img/erweima.jpg" alt="微信二维码"></div>
+        </div>
+    </div>
+    <div class="supuy_info_box">
+        <div class="supuy_info">
+            <ul>
+                <li><a href="http://www.supumall.com/Helper/helpAboutUs" target="_blank">关于我们</a></li>
+                <li><a href="http://www.supumall.com/Helper/helpJoinUs" target="_blank">人才招聘</a></li>
+                <li><a href="http://www.supumall.com/Helper/helpContactUs" target="_blank">联系我们</a></li>
+                <li><a href="http://www.supumall.com/Helper/helpInvestmentIn" target="_blank" style="border:none;">招商合作</a></li>
+                <li>
+                    <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=37021202000512&amp;token=346d0ccd-fdec-430a-8c43-de4efe4c8ff6" style="text-decoration:none;height:20px;line-height:20px;width: 100%;">
+                        <img src="/mall/Home/View/Public/Img/ghs.png" style="float:left;">
+                        <p style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#666666;">
+                            京公网安备 37021202000512号
+                        </p>
+                    </a>
+                </li>
+            </ul>
+            <div class="clear"></div>
+        </div>
+        <div>Copyright © 速普商城 2010-2016 All Right Reseved 鲁 ICP 证 09059644 号</div>
+        <div class="zizhi">
+            <a href="http://www.supumall.com/Helper/license" target="_blank"><img src="/mall/Home/View/Public/Img/zhizhao.png" alt="营业执照公示"></a>
+            <script src="http://kxlogo.knet.cn/seallogo.dll?sn=e14041537020048086xzmw000000&amp;size=0"></script>
         </div>
     </div>
 </div>
